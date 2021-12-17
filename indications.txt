@@ -1,0 +1,20 @@
+Le code source est composé des fichiers:
+- colorier.ml
+- solution.ml
+- jouer.ml
+
+La compilation se fait avec le fichier Makefile qui produit l'exécutable "jouer".
+Faire commande "make" dans le directory local chekroun-bah/ contenant tous les fichiers.
+
+La compilation utilise le fichier examples.ml qui doit contenir quatre voronois quelconques
+designés v1, v2, v3, v4.
+
+La compilation a besoin des fichiers sat_solver.ml et sat_solver.mli.
+
+Le programme est lancé avec la commande "./jouer" dans le directory local.
+
+Le programme demande le n° de voronoi (entre 1 et 4) et la distance choisie (euclide ou taxicab).
+Il propose de colorier avec la souris et donne le résultat (BRAVO OU RATE).
+Il propose de réessayer le coloriage du même voronoi ou bien d'obtenir la solution (si la réponse est non).
+La solution n'utilise que les couleurs de départ du voronoi (si pas possible le programme le signale).
+Il propose ensuite de rejouer avec un autre voronoi (quitte si réponse différente de "o").
